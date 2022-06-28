@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KeyChainDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mz1-rI-kfP">
+                                <rect key="frame" x="124" y="431" width="166" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0h-L7-o17">
+                                <rect key="frame" x="177" y="782" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="h0h-L7-o17" secondAttribute="height" multiplier="2:1" id="Xrz-WM-SRu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="SAVE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RYl-oq-WZg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sN6-OD-wEo">
+                                <rect key="frame" x="177" y="732" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sN6-OD-wEo" secondAttribute="height" multiplier="2:1" id="dAM-f9-44e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="DELETE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HYL-K9-eD9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTh-yH-J2s">
+                                <rect key="frame" x="177" y="682" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FTh-yH-J2s" secondAttribute="height" multiplier="2:1" id="5Xc-0g-II9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="READ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="readTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BAy-Es-Wy0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstItem="h0h-L7-o17" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AQV-xt-5VK"/>
+                            <constraint firstItem="h0h-L7-o17" firstAttribute="top" secondItem="sN6-OD-wEo" secondAttribute="bottom" constant="20" id="CZy-cX-6Um"/>
+                            <constraint firstItem="Mz1-rI-kfP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KcO-Dx-D2S"/>
+                            <constraint firstItem="sN6-OD-wEo" firstAttribute="top" secondItem="FTh-yH-J2s" secondAttribute="bottom" constant="20" id="Qrn-4m-Iq8"/>
+                            <constraint firstItem="Mz1-rI-kfP" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="SDL-j3-sil"/>
+                            <constraint firstItem="sN6-OD-wEo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UlW-Up-gAo"/>
+                            <constraint firstItem="FTh-yH-J2s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="icM-uH-1sY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="h0h-L7-o17" secondAttribute="bottom" constant="50" id="sp1-ja-Moe"/>
+                            <constraint firstItem="Mz1-rI-kfP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tWZ-X2-b4O"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnDELETE" destination="sN6-OD-wEo" id="DIk-OB-iEk"/>
+                        <outlet property="btnSAVE" destination="h0h-L7-o17" id="Zpa-cK-Rxe"/>
+                        <outlet property="txtToSave" destination="Mz1-rI-kfP" id="Xdv-Q9-zs7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="52"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
