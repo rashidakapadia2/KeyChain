@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        KeyChainManager.shared.deleteSingleVal(key: "Password")
         
     }
     @IBAction func saveTapped(_ sender: Any) {
@@ -22,8 +23,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func deleteTapped(_ sender: Any) {
-        KeyChainManager.shared.deleteSingleVal(key: "Password")
-       // KeyChainManager.shared.deleteAllValues()
+       // KeyChainManager.shared.deleteSingleVal(key: "Password")
+        KeyChainManager.shared.deleteAllValues()
     }
     
     @IBAction func readTapped(_ sender: Any) {
